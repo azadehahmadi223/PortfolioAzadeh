@@ -1,0 +1,126 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(3){
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+
+}
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+
+.i-right>:nth-child(2){
+    top: -4.7rem;
+    transform: scale(0.60);
+    left: -5rem; 
+}
+.i-right>:nth-child(3){
+    transform: scale(1);
+    left: 28%;
+}
+.i-right>:nth-child(4){
+    transform: scale(1.2);
+    top: 90px;
+  
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+.intro .right_img{
+    background: linear-gradient(145deg, #F5C32C, #F5C32C);
+    box-shadow: 4px 4px 8px #F5C32C, 4px -4px 8px #F5C32C;
+    border-radius: 10px;
+    height: 510px; 
+    width: 420px;
+    left: 5%;
+    bottom: 10px;
+    
+}
+.intro .right_img img{
+position: absolute;
+ width: 390px;
+ height: 500px;
+ left: 4%;
+ border-radius: 10px;
+}
+@media screen and (max-width: 480px) {
+    .intro{
+        flex-direction: column;
+        height: 64rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+top: -7rem !important;
+    }
+}

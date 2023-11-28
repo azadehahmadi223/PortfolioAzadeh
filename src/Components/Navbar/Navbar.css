@@ -1,0 +1,78 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora&display=swap');
+
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+  font-family:  "Lobster", sans-serif;
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+
+.n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.n-list > ul > li > a:hover{
+    cursor: pointer;
+    color: var(--orange);
+  
+}
+.n-button{
+    flex: 2;
+}
+.n-list ul li {
+    position: relative;
+    
+}
+.n-list ul li a {
+    text-decoration: none;
+    color:#3c4357f6;
+   
+}
+.n-list ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background:var(--gray);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.n-list ul li:hover::after{
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+}
